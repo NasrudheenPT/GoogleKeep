@@ -1,6 +1,6 @@
 let addBtn=document.getElementById("submit");
 let addTitle=document.getElementById("text");
-let addTxt=document.getElementById("text1")
+let addTxt=document.getElementById("description")
 
 addBtn.addEventListener("click", (e) =>{
     let notes=localStorage.getItem("notes");
@@ -35,6 +35,7 @@ function showNotes(){
         <div id="note">
       <h3>${element.title}</h3>
         <p>${element.text}</p>
+       
  
     </div>`;
     });
@@ -44,4 +45,7 @@ function showNotes(){
         notesElm.innerHTML=html;
     }
 }
+
+
+
 showNotes();
